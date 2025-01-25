@@ -1,0 +1,115 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{AC9DFEC8-2C84-4628-B7E8-BD777217DFDE}</ProjectGuid>
+        <ProjectVersion>16.1</ProjectVersion>
+        <FrameworkType>VCL</FrameworkType>
+        <MainSource>HTTPServerTest.dpr</MainSource>
+        <Base>True</Base>
+        <Config Condition="'$(Config)'==''">Debug</Config>
+        <Platform Condition="'$(Platform)'==''">Win32</Platform>
+        <TargetedPlatforms>1</TargetedPlatforms>
+        <AppType>Application</AppType>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Base)'=='true') or '$(Base_Win32)'!=''">
+        <Base_Win32>true</Base_Win32>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Config)'=='Debug' or '$(Cfg_1)'!=''">
+        <Cfg_1>true</Cfg_1>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Cfg_1)'=='true') or '$(Cfg_1_Win32)'!=''">
+        <Cfg_1_Win32>true</Cfg_1_Win32>
+        <CfgParent>Cfg_1</CfgParent>
+        <Cfg_1>true</Cfg_1>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Config)'=='Release' or '$(Cfg_2)'!=''">
+        <Cfg_2>true</Cfg_2>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Base)'!=''">
+        <DCC_Namespace>System;Xml;Data;Datasnap;Web;Soap;Vcl;Vcl.Imaging;Vcl.Touch;Vcl.Samples;Vcl.Shell;$(DCC_Namespace)</DCC_Namespace>
+        <SanitizedProjectName>HTTPServerTest</SanitizedProjectName>
+        <Icon_MainIcon>$(BDS)\bin\delphi_PROJECTICON.ico</Icon_MainIcon>
+        <DCC_DcuOutput>.\$(Platform)\$(Config)</DCC_DcuOutput>
+        <DCC_ExeOutput>.\$(Platform)\$(Config)</DCC_ExeOutput>
+        <DCC_E>false</DCC_E>
+        <DCC_N>false</DCC_N>
+        <DCC_S>false</DCC_S>
+        <DCC_F>false</DCC_F>
+        <DCC_K>false</DCC_K>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Base_Win32)'!=''">
+        <Icon_MainIcon>..\..\..\..\Dev\Ico\Designbolts-Cute-Social-2014-Cloud.ico</Icon_MainIcon>
+        <DCC_Namespace>Winapi;System.Win;Data.Win;Datasnap.Win;Web.Win;Soap.Win;Xml.Win;Bde;$(DCC_Namespace)</DCC_Namespace>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <VerInfo_Locale>1033</VerInfo_Locale>
+        <Manifest_File>$(BDS)\bin\default_app.manifest</Manifest_File>
+        <VerInfo_Keys>FileVersion=1.0.0.0;ProductName=HTTP Server Test;ProductVersion=1.0.0.0;CompanyName=Zamith Informática Ltda;LegalCopyright=Zamith Informática Ltda;LegalTrademarks=Zamith Informática Ltda;FileDescription=HTTP Server Test;InternalName=HTTP Server Test</VerInfo_Keys>
+        <DCC_UsePackage>dxPScxSchedulerLnkRS21;JvGlobus;JvMM;cxSchedulerRibbonStyleEventEditorRS21;TMSMQTTPkgDXE7;JvManagedThreads;cxSchedulerRS21;FireDACPgDriver;dxEMFRS21;JvCrypt;cxTreeListdxBarPopupMenuRS21;vcwdXE7;cxPivotGridRS21;DBXInterBaseDriver;DataSnapServer;DataSnapCommon;dxHttpIndyRequestRS21;dxSpreadSheetReportDesignerRS21;JvNet;officeXPrt;dxGaugeControlRS21;JvDotNetCtrls;TSock;DbxCommonDriver;vclimg;cxPivotGridOLAPRS21;dxPsPrVwAdvRS21;dbxcds;dxTileControlRS21;DatasnapConnectorsFreePascal;dxADOEMFRS21;JvXPCtrls;dxPSdxGaugeControlLnkRS21;vcldb;cxTreeListRS21;QRWRunDXE7w64;dxdborRS21;dxBarExtItemsRS21;frxDBX21;dxWizardControlRS21;CustomIPTransport;dsnap;IndyIPServer;IndyCore;CloudService;dxRichEditCoreRS21;FireDACIBDriver;frxADO21;dxPScxPCProdRS21;RtmRxDB210;dxPSRichEditControlLnkRS21;ipstudiowinwordxp;JvDB;JvRuntimeDesign;tmsdXE7;dxDockingRS21;dsnapxml;JclDeveloperTools;FireDACDb2Driver;dxPSLnksRS21;dxPSdxDBOCLnkRS21;RtmRxCtl210;cxLibraryRS21;dxPSdxMapControlLnkRS21;bindcompfmx;dxPSdxPDFViewerLnkRS21;dxComnRS21;FireDACODBCDriver;RESTBackendComponents;frxIntIOIndy21;dbrtl;FireDACCommon;bindcomp;inetdb;JvPluginSystem;dxPScxTLLnkRS21;DBXOdbcDriver;JvCmp;vclFireDAC;dxRichEditInplaceRS21;madDisAsm_;VLCNative;xmlrtl;JvTimeFramework;dxCloudServiceLibraryRS21;dxRichEditDocumentModelRS21;cxExportRS21;dxSpreadSheetCoreConditionalFormattingDialogsRS21;OverbyteIcsDXe7Run;FireDACCommonDriver;dxFlowChartRS21;bindengine;vclactnband;soaprtl;bindcompvcl;dxCoreRS21;Jcl;vclie;ZKEMKEEPER;madExcept_;dxSpreadSheetConditionalFormattingDialogsRS21;dxPSCoreRS21;cxSchedulerWebServiceStorageRS21;dxPSdxDBTVLnkRS21;dxPScxCommonRS21;dxADOServerModeRS21;FireDACMSSQLDriver;DBXInformixDriver;PasLibVlcPlayer;DataSnapServerMidas;ipstudiowinclient;dsnapcon;DBXFirebirdDriver;tmsexdXE7;inet;dxNavBarRS21;dxRibbonRS21;JvPascalInterpreter;FireDACMySQLDriver;soapmidas;vclx;dxSkinsCoreRS21;dxFlowChartDesignerRS21;DBXSybaseASADriver;dxFireDACServerModeRS21;dxSpreadSheetCoreDialogsRS21;RESTComponents;CPort_R;frxcs21;DelphiModbusXE7;dbexpress;IndyIPClient;FireDACSqliteDriver;FireDACDSDriver;ZComponent;DBXSqliteDriver;dxDBXServerModeRS21;dxRichEditControlRS21;fmx;JvDlgs;IndySystem;frxe21;dxSpreadSheetRS21;tethering;cxVerticalGridRS21;DataSnapClient;dxPScxPivotGridLnkRS21;frx21;DataSnapProviderClient;dxPSPrVwRibbonRS21;DBXSybaseASEDriver;dxFlowChartLayoutsRS21;dxFlowChartAdvancedCustomizeFormRS21;cxGridRS21;dxPDFViewerRS21;MetropolisUILiveTile;WebVideoComponents;vcldsnap;MQTTComponents;dxSpellCheckerRS21;fmxFireDAC;DBXDb2Driver;TBGWebCharts;frce;DBXOracleDriver;JvCore;vclribbon;dxtrmdRS21;fmxase;vcl;dxBarExtDBItemsRS21;dxGDIPlusRS21;DBXMSSQLDriver;IndyIPCommon;DataSnapFireDAC;FireDACDBXDriver;dxPSdxSpreadSheetLnkRS21;JvAppFrm;soapserver;dxdbtrRS21;inetdbxpress;TPNGButton;FireDACInfxDriver;dxPScxGridLnkRS21;dxPSdxFCLnkRS21;frxIntIO21;JvDocking;DzTalkApp;adortl;tmswizdXE7;HttpClient;JvWizards;dxSpreadSheetInplaceRichEditRS21;TCFLib110;madBasic_;FireDACASADriver;JvHMI;fsADO21;dxFireDACEMFRS21;JvBands;dxTabbedMDIRS21;ZDbc;emsclientfiredac;rtl;dxPSdxOCLnkRS21;DbxClientDriver;dxorgcRS21;ZPlain;dxPScxExtCommonRS21;JclContainers;dxPSdxLCLnkRS21;frxDB21;dxMapControlRS21;JvSystem;DataSnapNativeClient;svnui;JvControls;IndyProtocols;DBXMySQLDriver;cxPivotGridChartRS21;dxRichEditControlCoreRS21;bindcompdbx;fsDB21;JvJans;JvPrintPreview;ipstudiowin;JvPageComps;JvStdCtrls;JvCustom;fs21;dxmdsRS21;cxSchedulerTreeBrowserRS21;FireDACADSDriver;vcltouch;ZCore;dxServerModeRS21;emsclient;FrameViewerXE7;VCLRESTComponents;FireDAC;VclSmp;dxBarDBNavRS21;dxRibbonCustomizationFormRS21;DataSnapConnectors;TCFDsg110;HHCtrl;cxSchedulerGridRS21;fmxobj;JclVcl;ZParseSql;tmsxlsdXE7;dxPScxVGridLnkRS21;svn;dxBarRS21;FireDACOracleDriver;fmxdae;bdertl;FireDACMSAccDriver;dxSpreadSheetCoreRS21;DataSnapIndy10ServerTransport;$(DCC_UsePackage)</DCC_UsePackage>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_1)'!=''">
+        <DCC_Define>DEBUG;$(DCC_Define)</DCC_Define>
+        <DCC_DebugDCUs>true</DCC_DebugDCUs>
+        <DCC_Optimize>false</DCC_Optimize>
+        <DCC_GenerateStackFrames>true</DCC_GenerateStackFrames>
+        <DCC_DebugInfoInExe>true</DCC_DebugInfoInExe>
+        <DCC_RemoteDebug>true</DCC_RemoteDebug>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_1_Win32)'!=''">
+        <DCC_RemoteDebug>false</DCC_RemoteDebug>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_2)'!=''">
+        <DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
+        <DCC_Define>RELEASE;$(DCC_Define)</DCC_Define>
+        <DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+        <DCC_DebugInformation>0</DCC_DebugInformation>
+    </PropertyGroup>
+    <ItemGroup>
+        <DelphiCompile Include="$(MainSource)">
+            <MainSource>MainSource</MainSource>
+        </DelphiCompile>
+        <DCCReference Include="FormMain.pas">
+            <Form>FrmMain</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <BuildConfiguration Include="Release">
+            <Key>Cfg_2</Key>
+            <CfgParent>Base</CfgParent>
+        </BuildConfiguration>
+        <BuildConfiguration Include="Base">
+            <Key>Base</Key>
+        </BuildConfiguration>
+        <BuildConfiguration Include="Debug">
+            <Key>Cfg_1</Key>
+            <CfgParent>Base</CfgParent>
+        </BuildConfiguration>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Delphi.Personality.12</Borland.Personality>
+        <Borland.ProjectType>Application</Borland.ProjectType>
+        <BorlandProject>
+            <Delphi.Personality>
+                <Source>
+                    <Source Name="MainSource">HTTPServerTest.dpr</Source>
+                </Source>
+                <Excluded_Packages/>
+            </Delphi.Personality>
+            <Platforms>
+                <Platform value="Win32">True</Platform>
+                <Platform value="Win64">False</Platform>
+            </Platforms>
+        </BorlandProject>
+        <ProjectFileVersion>12</ProjectFileVersion>
+    </ProjectExtensions>
+    <Import Project="$(BDS)\Bin\CodeGear.Delphi.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Delphi.Targets')"/>
+    <Import Project="$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj" Condition="Exists('$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj')"/>
+    <Import Project="$(MSBuildProjectName).deployproj" Condition="Exists('$(MSBuildProjectName).deployproj')"/>
+</Project>
