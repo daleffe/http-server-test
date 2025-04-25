@@ -3,8 +3,8 @@ object FrmMain: TFrmMain
   Top = 0
   BorderStyle = bsToolWindow
   Caption = 'HTTP Server Test'
-  ClientHeight = 429
-  ClientWidth = 973
+  ClientHeight = 553
+  ClientWidth = 1261
   Color = clBtnFace
   DoubleBuffered = True
   Font.Charset = DEFAULT_CHARSET
@@ -22,25 +22,25 @@ object FrmMain: TFrmMain
   object GpHeader: TGridPanel
     Left = 0
     Top = 0
-    Width = 973
+    Width = 1261
     Height = 41
     Align = alTop
     BevelOuter = bvNone
     ColumnCollection = <
       item
-        Value = 20.000000000000000000
+        Value = 22.222222222222220000
       end
       item
-        Value = 20.000000000000000000
+        Value = 22.222222222222220000
       end
       item
-        Value = 20.000000000000000000
+        Value = 22.222222222222220000
       end
       item
-        Value = 20.000000000000000000
+        Value = 22.222222222222220000
       end
       item
-        Value = 20.000000000000000000
+        Value = 11.111111111111110000
       end>
     ControlCollection = <
       item
@@ -75,17 +75,15 @@ object FrmMain: TFrmMain
       end>
     ShowCaption = False
     TabOrder = 0
-    ExplicitLeft = 336
-    ExplicitTop = 48
-    ExplicitWidth = 185
+    ExplicitWidth = 973
     DesignSize = (
-      973
+      1261
       41)
     object LblServer: TLabel
       AlignWithMargins = True
       Left = 3
       Top = 3
-      Width = 188
+      Width = 274
       Height = 38
       Align = alClient
       Alignment = taCenter
@@ -103,9 +101,9 @@ object FrmMain: TFrmMain
     end
     object IptServer: TLabel
       AlignWithMargins = True
-      Left = 197
+      Left = 283
       Top = 3
-      Width = 188
+      Width = 274
       Height = 38
       Align = alClient
       Alignment = taCenter
@@ -118,15 +116,15 @@ object FrmMain: TFrmMain
       ParentFont = False
       Layout = tlCenter
       WordWrap = True
-      ExplicitLeft = 154
+      ExplicitLeft = 197
       ExplicitWidth = 85
       ExplicitHeight = 13
     end
     object LblPort: TLabel
       AlignWithMargins = True
-      Left = 391
+      Left = 563
       Top = 3
-      Width = 188
+      Width = 274
       Height = 38
       Align = alClient
       Alignment = taCenter
@@ -139,13 +137,13 @@ object FrmMain: TFrmMain
       ParentFont = False
       Layout = tlCenter
       WordWrap = True
-      ExplicitLeft = 243
+      ExplicitLeft = 391
       ExplicitWidth = 28
       ExplicitHeight = 13
     end
     object EdPort: TSpinEdit
       AlignWithMargins = True
-      Left = 618
+      Left = 919
       Top = 9
       Width = 121
       Height = 22
@@ -155,14 +153,13 @@ object FrmMain: TFrmMain
       MinValue = 1
       TabOrder = 0
       Value = 8888
-      ExplicitLeft = 424
-      ExplicitTop = 32
+      ExplicitLeft = 618
     end
     object SbStartStop: TSpeedButton
       AlignWithMargins = True
-      Left = 779
+      Left = 1123
       Top = 3
-      Width = 191
+      Width = 135
       Height = 35
       Align = alClient
       Caption = 'Iniciar'
@@ -175,21 +172,20 @@ object FrmMain: TFrmMain
   end
   object SBar: TStatusBar
     Left = 0
-    Top = 410
-    Width = 973
+    Top = 534
+    Width = 1261
     Height = 19
     Panels = <>
     SimplePanel = True
-    ExplicitLeft = 256
-    ExplicitTop = 288
-    ExplicitWidth = 0
+    ExplicitTop = 410
+    ExplicitWidth = 973
   end
   object GpContent: TGridPanel
     AlignWithMargins = True
     Left = 3
     Top = 44
-    Width = 967
-    Height = 363
+    Width = 1255
+    Height = 487
     Align = alClient
     BevelOuter = bvNone
     ColumnCollection = <
@@ -217,16 +213,14 @@ object FrmMain: TFrmMain
       end>
     ShowCaption = False
     TabOrder = 2
-    ExplicitLeft = 48
-    ExplicitTop = 88
-    ExplicitWidth = 337
-    ExplicitHeight = 297
+    ExplicitWidth = 967
+    ExplicitHeight = 363
     object GbConn: TGroupBox
       AlignWithMargins = True
       Left = 3
       Top = 3
-      Width = 531
-      Height = 357
+      Width = 691
+      Height = 481
       Align = alClient
       Caption = 'Conex'#245'es'
       Font.Charset = DEFAULT_CHARSET
@@ -236,16 +230,14 @@ object FrmMain: TFrmMain
       Font.Style = [fsBold]
       ParentFont = False
       TabOrder = 0
-      ExplicitLeft = 11
-      ExplicitTop = 6
-      ExplicitWidth = 162
-      ExplicitHeight = 291
+      ExplicitWidth = 531
+      ExplicitHeight = 357
       object GridConn: TDBGrid
         AlignWithMargins = True
         Left = 5
         Top = 18
-        Width = 521
-        Height = 222
+        Width = 681
+        Height = 345
         Align = alTop
         DataSource = Ds
         DrawingStyle = gdsGradient
@@ -305,26 +297,26 @@ object FrmMain: TFrmMain
             Title.Font.Height = -11
             Title.Font.Name = 'Segoe UI'
             Title.Font.Style = []
-            Width = 211
+            Width = 366
             Visible = True
           end>
       end
       object GbConnDetails: TGroupBox
         AlignWithMargins = True
         Left = 5
-        Top = 246
-        Width = 521
-        Height = 106
+        Top = 369
+        Width = 681
+        Height = 107
         Align = alClient
         Caption = 'Detalhes'
         TabOrder = 1
-        ExplicitWidth = 152
-        ExplicitHeight = 40
+        ExplicitTop = 246
+        ExplicitHeight = 230
         object GpConnDetails: TGridPanel
           Left = 2
           Top = 15
-          Width = 517
-          Height = 89
+          Width = 677
+          Height = 90
           Align = alClient
           BevelOuter = bvNone
           ColumnCollection = <
@@ -377,14 +369,14 @@ object FrmMain: TFrmMain
               Value = 33.333333333333340000
             end>
           TabOrder = 0
-          ExplicitWidth = 148
-          ExplicitHeight = 23
+          ExplicitWidth = 517
+          ExplicitHeight = 89
           object LblIP: TLabel
             AlignWithMargins = True
             Left = 3
             Top = 3
-            Width = 58
-            Height = 26
+            Width = 78
+            Height = 27
             Align = alClient
             Alignment = taCenter
             Caption = 'IP'
@@ -401,10 +393,10 @@ object FrmMain: TFrmMain
           end
           object DBEdIP: TDBEdit
             AlignWithMargins = True
-            Left = 67
+            Left = 87
             Top = 3
-            Width = 447
-            Height = 23
+            Width = 587
+            Height = 24
             Align = alClient
             DataField = 'RemoteIP'
             DataSource = Ds
@@ -416,16 +408,16 @@ object FrmMain: TFrmMain
             ParentFont = False
             ReadOnly = True
             TabOrder = 0
-            ExplicitLeft = 144
-            ExplicitWidth = 277
+            ExplicitLeft = 67
+            ExplicitWidth = 447
             ExplicitHeight = 21
           end
           object LblMethod: TLabel
             AlignWithMargins = True
             Left = 3
-            Top = 32
-            Width = 58
-            Height = 26
+            Top = 33
+            Width = 78
+            Height = 27
             Align = alClient
             Alignment = taCenter
             Caption = 'Tipo'
@@ -437,16 +429,16 @@ object FrmMain: TFrmMain
             ParentFont = False
             Layout = tlCenter
             WordWrap = True
-            ExplicitTop = 10
+            ExplicitTop = 32
             ExplicitWidth = 23
             ExplicitHeight = 13
           end
           object DBEdMethod: TDBEdit
             AlignWithMargins = True
-            Left = 67
-            Top = 32
-            Width = 447
-            Height = 23
+            Left = 87
+            Top = 33
+            Width = 587
+            Height = 24
             Align = alClient
             DataField = 'Method'
             DataSource = Ds
@@ -458,17 +450,17 @@ object FrmMain: TFrmMain
             ParentFont = False
             ReadOnly = True
             TabOrder = 1
-            ExplicitLeft = 144
-            ExplicitTop = 34
-            ExplicitWidth = 277
+            ExplicitLeft = 67
+            ExplicitTop = 32
+            ExplicitWidth = 447
             ExplicitHeight = 21
           end
           object LblURI: TLabel
             AlignWithMargins = True
             Left = 3
-            Top = 61
-            Width = 58
-            Height = 28
+            Top = 63
+            Width = 78
+            Height = 27
             Align = alClient
             Alignment = taCenter
             Caption = 'URI'
@@ -480,16 +472,16 @@ object FrmMain: TFrmMain
             ParentFont = False
             Layout = tlCenter
             WordWrap = True
-            ExplicitTop = 17
+            ExplicitTop = 61
             ExplicitWidth = 18
             ExplicitHeight = 13
           end
           object DBEdURI: TDBEdit
             AlignWithMargins = True
-            Left = 67
-            Top = 61
-            Width = 447
-            Height = 25
+            Left = 87
+            Top = 63
+            Width = 587
+            Height = 24
             Align = alClient
             DataField = 'URI'
             DataSource = Ds
@@ -501,19 +493,19 @@ object FrmMain: TFrmMain
             ParentFont = False
             ReadOnly = True
             TabOrder = 2
-            ExplicitLeft = 144
-            ExplicitTop = 65
-            ExplicitWidth = 277
+            ExplicitLeft = 67
+            ExplicitTop = 61
+            ExplicitWidth = 447
             ExplicitHeight = 21
           end
         end
       end
     end
     object GpConnInfo: TGridPanel
-      Left = 537
+      Left = 697
       Top = 0
-      Width = 430
-      Height = 363
+      Width = 558
+      Height = 487
       Align = alClient
       BevelOuter = bvNone
       ColumnCollection = <
@@ -548,13 +540,15 @@ object FrmMain: TFrmMain
         end>
       ShowCaption = False
       TabOrder = 1
-      ExplicitLeft = 535
+      ExplicitLeft = 537
+      ExplicitWidth = 430
+      ExplicitHeight = 363
       object GbHeaders: TGroupBox
         AlignWithMargins = True
         Left = 3
         Top = 3
-        Width = 424
-        Height = 115
+        Width = 552
+        Height = 156
         Align = alClient
         Caption = 'Cabe'#231'alho da Requisi'#231#227'o'
         Font.Charset = DEFAULT_CHARSET
@@ -564,16 +558,14 @@ object FrmMain: TFrmMain
         Font.Style = [fsBold]
         ParentFont = False
         TabOrder = 0
-        ExplicitLeft = 6
-        ExplicitTop = 6
-        ExplicitWidth = 463
-        ExplicitHeight = 117
+        ExplicitWidth = 424
+        ExplicitHeight = 115
         object DBMemoHeaders: TDBMemo
           AlignWithMargins = True
           Left = 5
           Top = 18
-          Width = 414
-          Height = 92
+          Width = 542
+          Height = 133
           Align = alClient
           DataField = 'Headers'
           DataSource = Ds
@@ -586,14 +578,16 @@ object FrmMain: TFrmMain
           ReadOnly = True
           ScrollBars = ssVertical
           TabOrder = 0
+          ExplicitWidth = 414
+          ExplicitHeight = 92
         end
       end
       object GpData: TGridPanel
         AlignWithMargins = True
         Left = 3
-        Top = 124
-        Width = 424
-        Height = 115
+        Top = 165
+        Width = 552
+        Height = 156
         Align = alClient
         BevelOuter = bvNone
         ColumnCollection = <
@@ -629,16 +623,15 @@ object FrmMain: TFrmMain
           end>
         ShowCaption = False
         TabOrder = 1
-        ExplicitLeft = 64
-        ExplicitTop = 160
-        ExplicitWidth = 185
-        ExplicitHeight = 41
+        ExplicitTop = 124
+        ExplicitWidth = 424
+        ExplicitHeight = 115
         object GbQS: TGroupBox
           AlignWithMargins = True
           Left = 3
           Top = 3
-          Width = 135
-          Height = 109
+          Width = 178
+          Height = 150
           Align = alClient
           Caption = 'QueryString'
           Font.Charset = DEFAULT_CHARSET
@@ -648,14 +641,14 @@ object FrmMain: TFrmMain
           Font.Style = [fsBold]
           ParentFont = False
           TabOrder = 0
-          ExplicitLeft = 11
-          ExplicitTop = 6
+          ExplicitWidth = 135
+          ExplicitHeight = 109
           object DBMemoQS: TDBMemo
             AlignWithMargins = True
             Left = 5
             Top = 18
-            Width = 125
-            Height = 86
+            Width = 168
+            Height = 127
             Align = alClient
             DataField = 'QS'
             DataSource = Ds
@@ -667,14 +660,16 @@ object FrmMain: TFrmMain
             ParentFont = False
             ReadOnly = True
             TabOrder = 0
+            ExplicitWidth = 125
+            ExplicitHeight = 86
           end
         end
         object GbForm: TGroupBox
           AlignWithMargins = True
-          Left = 144
+          Left = 187
           Top = 3
-          Width = 135
-          Height = 109
+          Width = 178
+          Height = 150
           Align = alClient
           Caption = 'Form'
           Font.Charset = DEFAULT_CHARSET
@@ -684,15 +679,15 @@ object FrmMain: TFrmMain
           Font.Style = [fsBold]
           ParentFont = False
           TabOrder = 1
-          ExplicitLeft = 11
-          ExplicitTop = 6
-          ExplicitHeight = 105
+          ExplicitLeft = 144
+          ExplicitWidth = 135
+          ExplicitHeight = 109
           object DBMemoForm: TDBMemo
             AlignWithMargins = True
             Left = 5
             Top = 18
-            Width = 125
-            Height = 86
+            Width = 168
+            Height = 127
             Align = alClient
             DataField = 'Form'
             DataSource = Ds
@@ -704,14 +699,16 @@ object FrmMain: TFrmMain
             ParentFont = False
             ReadOnly = True
             TabOrder = 0
+            ExplicitWidth = 125
+            ExplicitHeight = 86
           end
         end
         object GbPost: TGroupBox
           AlignWithMargins = True
-          Left = 285
+          Left = 371
           Top = 3
-          Width = 136
-          Height = 109
+          Width = 178
+          Height = 150
           Align = alClient
           Caption = 'POST'
           Font.Charset = DEFAULT_CHARSET
@@ -721,15 +718,15 @@ object FrmMain: TFrmMain
           Font.Style = [fsBold]
           ParentFont = False
           TabOrder = 2
-          ExplicitLeft = 11
-          ExplicitTop = 6
-          ExplicitHeight = 105
+          ExplicitLeft = 285
+          ExplicitWidth = 136
+          ExplicitHeight = 109
           object DBMemoPOST: TDBMemo
             AlignWithMargins = True
             Left = 5
             Top = 18
-            Width = 126
-            Height = 86
+            Width = 168
+            Height = 127
             Align = alClient
             DataField = 'Post'
             DataSource = Ds
@@ -741,15 +738,17 @@ object FrmMain: TFrmMain
             ParentFont = False
             ReadOnly = True
             TabOrder = 0
+            ExplicitWidth = 126
+            ExplicitHeight = 86
           end
         end
       end
       object GbResponse: TGroupBox
         AlignWithMargins = True
         Left = 3
-        Top = 245
-        Width = 424
-        Height = 115
+        Top = 327
+        Width = 552
+        Height = 157
         Align = alClient
         Caption = 'Resposta ao Cliente'
         Font.Charset = DEFAULT_CHARSET
@@ -759,16 +758,15 @@ object FrmMain: TFrmMain
         Font.Style = [fsBold]
         ParentFont = False
         TabOrder = 2
-        ExplicitLeft = 6
-        ExplicitTop = 6
-        ExplicitWidth = 463
-        ExplicitHeight = 117
+        ExplicitTop = 245
+        ExplicitWidth = 424
+        ExplicitHeight = 115
         object MemoRes: TMemo
           AlignWithMargins = True
           Left = 5
           Top = 45
-          Width = 414
-          Height = 65
+          Width = 542
+          Height = 107
           Align = alClient
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -780,14 +778,14 @@ object FrmMain: TFrmMain
           ParentFont = False
           ScrollBars = ssVertical
           TabOrder = 0
-          ExplicitTop = 40
-          ExplicitHeight = 70
+          ExplicitWidth = 414
+          ExplicitHeight = 65
         end
         object CbResType: TComboBox
           AlignWithMargins = True
           Left = 5
           Top = 18
-          Width = 414
+          Width = 542
           Height = 21
           Align = alTop
           Style = csDropDownList
@@ -805,6 +803,7 @@ object FrmMain: TFrmMain
             'HTML'
             'JSON'
             'XML')
+          ExplicitWidth = 414
         end
       end
     end
